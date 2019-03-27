@@ -19,3 +19,7 @@ main = do
   print $ "the answer is "
   print $ sumOfThreeOrFiveMultTo 10
   print $ sumOfThreeOrFiveMultTo 1000
+
+  let isThreeOrFiveMult n = (n `mod` 3) == 0 || (n `mod` 5) == 0
+  print $ sum $ filter isThreeOrFiveMult [1..9]
+  print $ sum $ filter isThreeOrFiveMult [1..999]
